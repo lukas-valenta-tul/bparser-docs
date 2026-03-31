@@ -1,7 +1,7 @@
 # Setup BParser with Visual Studio on Windows
 
 1. Prepare Visual Studio
-     1. Install the following workloads for Visual Studio. [Here](https://learn.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=visualstudio) is how. 
+     1. Install the following workloads for Visual Studio. If you are unsure how, see the [modify Visual Studio](https://learn.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=visualstudio) tutorial. 
         * Desktop Development with C++
         * Linux and embedded development with C++
      2. Install the following components for Visual Studio. 
@@ -9,13 +9,13 @@
         * C++ CMake tools for Windows
         * C++ CMake tools for Linux
 2. Install Boost libraries
-   1. Open [Developer Command Prompt](https://learn.microsoft.com/en-us/visualstudio/ide/reference/command-prompt-powershell?view=visualstudio)
+   1. Open the [Developer Command Prompt](https://learn.microsoft.com/en-us/visualstudio/ide/reference/command-prompt-powershell?view=visualstudio) provided by Visual Studio
    2. Continue using the [Boost tutorial](https://www.boost.org/doc/user-guide/getting-started.html)
 3. Clone the BParser repository
    1. Open a console in a folder where you wish to clone BParser
    2. Open [https://github.com/flow123d/bparser/tree/master](https://github.com/flow123d/bparser/tree/master) in GitHub
    3. Press the green Code button near the top of the page
-   4. Choose a clone method and run the displayed command in your opened console. HTTPS is recommended.
+   4. Choose a clone method and run the displayed command in your opened console. The HTTPS method is recommended.
 4. Open BParser folder in Visual Studio
    1. Open Visual Studio
    2. Click Open folder...
@@ -75,6 +75,6 @@
    3. For the Release configuration, repeat step 5. with the x64-Clang-Release configuration
 6. Start a test
    1. In Visual Studio in the top menu open the dropdown next to the green Debug triangle and select `test_parser_bin.exe`
-   2. Click the green Debug triangle
+   2. Click the green Debug triangle  
    Visual Studio will compile everything necessary and start the Parser test
    3. If the Parser test completes successfully you are good to go
