@@ -12,7 +12,6 @@ The typical workflow of the Parser class is:
    * Set parsed expression
 2. Compile
 3. Run
-4. Read result variable
 
 ## Define
 The Parser class constructor requires the `max_vec_size` integer.  
@@ -26,10 +25,10 @@ The `set_variable`, `set_var_copy` and `set_constant` methods save their argumen
 Parser class **requires** one variable of name "\_result\_". This is where the computed values will be saved.  
 Processor will throw an exception if the "\_result\_" variable was not set or its shape does not match the result shape of the input expression.
 
-`Parser.parse` takes the input expression and creates the Abstract Syntax Tree (AST) and sets 3 mathematical constants TODO: which.  
-It will throw an exception if the input expression doesn't follow the syntax or is using unknown (syntactic) symbols.  
+`Parser.parse` takes the input expression and creates the Abstract Syntax Tree (AST) and sets 3 constants, *e*, pi and epsilon, which is the machine epsilon of `double`.  
+It will throw an exception if the input expression doesn't follow the expression syntax or is using unknown (syntactic) symbols.  
 
-After parsing, the `free_symbols` and `symbols` methods may be used to get all the symbols(variables) which are (not)used in the parsed expression.
+After parsing, the `free_symbols` and `symbols` methods may be used to get all the symbols (variables) which are (not)used in the parsed expression.
 
 ## Compile
 
