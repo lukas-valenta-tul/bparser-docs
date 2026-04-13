@@ -1,5 +1,6 @@
 # Setup BParser with Visual Studio on Windows
 
+To be able to compile BParser in Visual Studio do:
 1. Prepare Visual Studio
      1. Install the following workloads for Visual Studio. If you are unsure how, see the [modify Visual Studio](https://learn.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=visualstudio) tutorial. 
         * Desktop Development with C++
